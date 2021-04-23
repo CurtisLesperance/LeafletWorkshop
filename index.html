@@ -26,14 +26,14 @@
 
     // Initialize map and set its view to Calgary, Alberta
     
-	var mymap = L.map('mapid').setView([56.012, -114.0750], 11);    
+	var mymap = L.map('mapid').setView([51.012, -114.0750], 11);    
     
     
     
     // Add the Mapbox Streets tile layer to the map
     
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 16,
+		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -47,7 +47,7 @@
     // ----------- BEGIN SECTION (Markers, circles, polygons, & popups) ------------- 
     // Enable the code below to show additional elements that can be added to your map. 
     
-    /*
+    
 
 	L.marker([50.95, -114.22]).addTo(mymap)
 		.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
@@ -58,13 +58,13 @@
 		color: 'red',
 		fillColor: '#f03',
 		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("I am a circle.");
+	}).addTo(mymap).bindPopup("I am Groot!");
 
 	L.polygon([
 		[51.1800, -114.20],
 		[51.1200, -114.20],
 		[51.1400, -114.25]
-	]).addTo(mymap).bindPopup("I am a polygon.");
+	]).addTo(mymap).bindPopup("I am not Groot!");
 
 
 	var popup = L.popup();
@@ -77,7 +77,7 @@
 	}
 
 	mymap.on('click', onMapClick);
-    */
+    
     
     
     // ----------- END SECTION (Markers, circles, polygons, & popups) ---------------- 
